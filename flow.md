@@ -34,3 +34,8 @@ Go to GitHub after pushing commits. Then go `Pull requests`, `New pull request`,
 When you create `PR` let know your teammates about it and give link to that `PR`. Two of them must leave OK as **comment**, or leave suggestions how to improve you code.
 
 If you see two or more OKs you author can merge branches via GitHub interface. After that author can remove his branch from remote.
+
+![](https://raw.githubusercontent.com/anyxem/git-info/master/img/1.png)
+
+You can see this graph at GitHub `Graphs` -> `Network`.
+`Shift + Arrow Right` to see latest commits
