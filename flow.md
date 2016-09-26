@@ -27,6 +27,14 @@ repeat items 2-4 if needed. after that push changes again but without `+` sign, 
 
 TRY DO NOT COMMIT DIRECTLY INTO `MASTER` sure IRL we could. :)
 
+#### 4.1 Update feature branch with remote
+1. `git checkout master`
+2. `git pull --rebase origin master`
+3. `git checkout feature/my-feature`
+4. `git rebase master`
+
+Now we have updated own feature branch with all changes from `master` branch
+
 ## 5. Create pull request
 
 Go to GitHub after pushing commits. Then go `Pull requests`, `New pull request`, in base select `master` in compare select `feature/my-feature`. Then press `Create pull request`. If you pretty often used `--rebase` github will able to merge code automatically, if you you'll know and you should resolve conflicts, and after that push commits again.
