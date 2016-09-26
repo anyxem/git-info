@@ -38,6 +38,30 @@ Before next steps commit or stash all your changes
 
 Now we have updated own feature branch with all changes from `master` branch
 
+#### 3.3 Squash commits
+
+To avoid history from commits like `fix letter`, `one quick fix`, etc we should use `fixup` or `squash`
+
+For example we forgot to remove `console.log()` from our code but already commited the code. We sould do next
+
+`git add <file>`
+
+`git commit --fixup <commit hash>`
+
+after this action git creates commit with same name as your commit that you want to fix and `fixup!` at the beginning. You can check it in commit history
+
+next step is interactive rebase
+
+`git rebase -i --autosquash`
+
+then save and close editor (`:wq`)
+
+that's it
+
+#### 3.4 Bit complex but flexible way
+
+...
+
 ## 4. Create pull request
 
 Go to GitHub after pushing commits. Then go `Pull requests`, `New pull request`, in base select `master` in compare select `feature/my-feature`. Then press `Create pull request`. If you pretty often used `--rebase` github will able to merge code automatically, if you you'll know and you should resolve conflicts, and after that push commits again.
