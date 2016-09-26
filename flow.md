@@ -15,7 +15,7 @@ Feature branches are started with `feature/` or `fix/` or whatever you want.
 1. `git checkout master` - in case of other active branch switch to master
 2. `git pull --rebase origin master` - refresh local master branch with remote with key `--rebase` to avoid of unnessecary commits like a `merge xxxx/master with master`
 
-## 4. Create feature branch
+### 3.1. Create feature branch
 
 1. `git checkout -b feature/my-feature` - create branch and switch to it
 2. updating the code
@@ -27,7 +27,10 @@ repeat items 2-4 if needed. after that push changes again but without `+` sign, 
 
 TRY DO NOT COMMIT DIRECTLY INTO `MASTER` sure IRL we could. :)
 
-#### 4.1 Update feature branch with remote
+#### 3.2 Update feature branch with remote
+
+Before next steps commit or stash all your changes
+
 1. `git checkout master`
 2. `git pull --rebase origin master`
 3. `git checkout feature/my-feature`
@@ -35,7 +38,7 @@ TRY DO NOT COMMIT DIRECTLY INTO `MASTER` sure IRL we could. :)
 
 Now we have updated own feature branch with all changes from `master` branch
 
-## 5. Create pull request
+## 4. Create pull request
 
 Go to GitHub after pushing commits. Then go `Pull requests`, `New pull request`, in base select `master` in compare select `feature/my-feature`. Then press `Create pull request`. If you pretty often used `--rebase` github will able to merge code automatically, if you you'll know and you should resolve conflicts, and after that push commits again.
 
