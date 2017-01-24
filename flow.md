@@ -23,8 +23,10 @@ Feature branches are started with `feature/` or `fix/` or whatever you want.
 4. `git commit -m "feat(main): add main page"` - commit changes according to name standards
 5. `git push origin +feature/my-feature` - push commits to remote
 
-repeat items 2-4 if needed. after that push changes again but without `+` sign, as we have already that branch remotely
+repeat items 2-4 if needed. after that push changes again but without `+` sign, as we have already that branch remotely.
+`+` sign is a shorthand for a `--force` or `-f` parameter. If you made history re-write (`rebase` or `commit --amend`) you should use forsed push. Make sure that nobody pulled you branch before forced push. 
 
+NEVER EVER EVER force push into master branch
 TRY DO NOT COMMIT DIRECTLY INTO `MASTER` sure IRL we could. :)
 
 #### 3.2 Update feature branch with remote
